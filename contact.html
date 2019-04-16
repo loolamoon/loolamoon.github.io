@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact | Cooper Elementary School Library</title>
+  <meta name="description" content="Contact form for Cooper Elementary Library.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script>
+  function validateForm() {
+ 
+    //make sure name is entered
+    var name = document.getElementById('name').value;
+     
+    if (name == '') {
+            alert("You must enter your name!");
+            return false;
+    } 
+
+}
+  </script>
+  
+</head>
+
+<body>
+<div class="wrapper"> <!-- BEGIN WRAPPER -->
+
+<header class="banner">
+
+<a href="index.html"><img class="logo" width="141" height="135" src="images/cooper.png" alt="Cooper Elementary School Cougars logo"></a>
+
+<a href="index.html"><h1>Cooper Elementary School Library</h1></a>
+</header>
+
+<nav class="mainmenu">
+<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+	  <li><a href="rules.html">Rules</a></li>
+	  <li><a href="parents.html">For Parents</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<main class="content">
+
+<h2>Contact the library!</h2>
+
+
+<form class="book-form" method="post" onsubmit="return validateForm()">
+
+<fieldset>
+
+	<legend>Personal Information</legend>
+
+	<label for="name">Name:</label>
+	<input id="name" type="text" name="name">
+
+			<label for="position">Which describes you?</label>
+
+			<select id="position" name="position">
+				<option value="student">Student</option>
+				<option value="teacher">Teacher</option>
+				<option value="parent-guardian">Parent or guardian</option>
+				<option value="other">Other</option>
+			</select>
+
+		
+		<fieldset>
+		
+			<legend>What grade are you in?</legend>
+			
+			<label><input type="radio" name="grade" id="kinder" value="kinder"> K</label>
+			
+
+			<label><input type="radio" name="grade" id="1st" value="1st"> 1<sup>st</sup></label>
+			
+
+			<label><input type="radio" name="grade" id="2nd" value="2nd"> 2<sup>nd</sup></label>
+			
+
+			<label><input type="radio" name="grade" id="3rd" value="3rd"> 3<sup>rd</sup></label>
+			
+
+			<label><input type="radio" name="grade" id="4th" value="4th"> 4<sup>th</sup></label>			
+			
+			<label><input type="radio" name="grade" id="5th" value="5th"> 5<sup>th</sup></label>
+			
+		</fieldset>
+
+</fieldset>
+		
+<fieldset>
+
+<legend>Message</legend>
+
+<fieldset>		
+		
+			<legend>What is your message?</legend>
+			
+			<textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+
+</fieldset>
+
+<input type="submit" value="Send!">
+
+<input type="reset" value="Start Over">
+
+</fieldset>
+
+</form>
+
+</main>
+
+<aside class="sidebar">
+
+<p>The library is available for contact during school hours. Please don't hesitate to get in touch.</p>
+
+</aside>
+
+<footer class="thefooter">
+
+<p>&copy; 2017 Cooper Elementary School Library</p>
+
+</footer>
+
+
+</div> <!-- END WRAPPER -->
+
+</body>
+</html>
